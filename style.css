@@ -1,0 +1,263 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* position: relative; */
+  min-height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  display: block;
+}
+
+.content {
+  display: table-row;
+  height: 100%;
+}
+
+.content-body {
+  display: table-cell;
+  background-color: #dddddd;
+}
+
+.cards {
+  max-height: 100%;
+  overflow-y: auto;
+  margin-bottom: 50px;
+  overflow-x: hidden;
+}
+
+.banner {
+  background-image: url(./images/pexels-polina-tankilevitch-4109748.jpg);
+  background-size: contain;
+  background-position: center;
+  padding: 50px 0 50px 0;
+  text-align: center;
+  color: #dddddd;
+  font-size: 20px;
+}
+
+#banner-heading {
+  margin: 10px 0px 10px 0px;
+}
+
+#banner-text {
+  margin: 10px;
+}
+
+#nav_bar {
+  float: right;
+  background-color: transparent;
+  list-style: none;
+  margin-top: 22px;
+}
+
+#nav_bar a {
+  text-decoration: none;
+  color: #dddddd;
+}
+
+#link:hover {
+  color: #80a88c;
+}
+
+.nav-links {
+  display: inline-block;
+  padding: 8px;
+}
+
+.grid-item {
+  padding: 10px;
+}
+
+.grid-item > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 16px rgb(0 0 0 / 50%);
+  border-radius: 4px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 50vh;
+  grid-gap: 10px;
+}
+
+.text-container {
+  margin: 0;
+  padding: 30px 8px 30px;
+  background-color: #dddddd;
+}
+
+.footer {
+  background-color: #3b3b3b;
+  padding: 20px;
+}
+
+.banner2 {
+  background-size: contain;
+  background-position: center;
+  padding: 40px 0 40px 0;
+  color: #dddddd;
+  font-size: 30px;
+  background-image: linear-gradient(
+    to top,
+    rgba(45, 21, 10, 1),
+    rgba(45, 21, 0, 0.5)
+  );
+}
+
+.instructions {
+  margin-bottom: 30px;
+}
+
+main {
+  padding: 0px 0px 100px 10px;
+  background-color: #dddddd;
+}
+
+a:visited {
+  color: gray;
+}
+
+hr {
+  margin-top: 0px;
+  margin-block-end: 2em;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px 60px 0px 60px;
+  margin-right: 60px;
+  margin-left: 60px;
+  justify-content: center;
+}
+
+.grid-item-aeropress-general-instructions {
+  float: left;
+  background-color: #eeeeee;
+  grid-column: 1 / 2;
+  padding: 8px;
+  border-radius: 8px;
+  width: fit-content;
+  block-size: fit-content;
+  box-shadow: 0 0 16px rgb(0 0 0 / 50%);
+}
+
+.how-to {
+  padding-bottom: 30px;
+}
+
+.how-to-list {
+  padding-left: 0px;
+  list-style: none;
+}
+
+.grid-item-tools {
+  background-color: #eeeeee;
+  grid-column: 2 / 3;
+  padding: 8px;
+  border-radius: 8px;
+  width: fit-content;
+  block-size: fit-content;
+  margin-left: 0;
+  box-shadow: 0 0 16px rgb(0 0 0 / 50%);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+}
+
+.list-style {
+  padding-bottom: 10px;
+}
+
+.grid-item-dose-brew-time {
+  float: left;
+  grid-column: 3 / 4;
+  background-color: #eeeeee;
+  padding: 8px;
+  border-radius: 8px;
+  width: fit-content;
+  block-size: fit-content;
+  box-shadow: 0 0 16px rgb(0 0 0 / 50%);
+}
+
+#background-container-aeropress {
+    background-image: url(./images/tco_brewing_method-aeropress.jpg);
+    background-position: center;
+    /* opacity: 0.5; */
+    background-size: 100px;
+    padding-left: 0px;
+}
+
+#background-container-V60 {
+    background-image: url(./images/pour-over-v60-coffee-maker-260nw-1844985637\ copy.jpg);
+    background-position: center;
+    background-size: 100px;
+    padding-left: 0px;
+}
+
+#background-container-contact {
+    padding-left: 0px;
+   padding-bottom: 0px;
+}
+
+input[type=text], select, textarea {
+    width:100%;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color:#80a88c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #04AA6D;
+  }
+  
+  .container-contact-form {
+    font-family: Helvetica, sans-serif;
+    font-size: smaller;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+  }
+
+  #background {
+    background-color:#f2f2f2;
+  }
+
+  .notification {
+    text-align: center;
+    font-size: larger;
+    padding-bottom: 20px;
+    visibility: hidden;
+    color:  #04AA6D;
+  }
+  

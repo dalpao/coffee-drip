@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body id="background">
+
+        <header class="header2">
+          <nav>
+            <ul id="nav_bar">
+              <li class="nav-links">
+                <a id="link" href="index.html">Home</a>
+              </li>
+              <li class="nav-links">
+                <a id="link" href="aeropress.html">Aeropress Recipe</a>
+              </li>
+              <li class="nav-links">
+                  <a id="link" href="v60.html">V60 Recipe</a>
+                </li>
+              <li class="nav-links" id="message">
+                <a id="link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="banner2">
+          </div>
+        </header>
+
+        <div id="background-container-contact">
+            <h2 class="text-container">
+                <strong>Contact us</strong>
+            </h2>
+            <hr>
+        </div>
+
+        <div class="container-contact-form">
+        <div class="notification">
+            <p>Thank you for getting in touch!</p>
+        </div>
+            <form action="" onsubmit="return false">
+                <label>First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name...">
+            
+                <label>Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+            
+                <label>Email</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your email...">
+            
+                <label>Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." style="height:200px"></textarea>
+            
+                <input class="submit" type="submit" value="Submit">
+              </form>
+
+        </div>
+
+        <footer class="footer">
+            <p>Website made by Paola</p>
+          </footer>
+<script>
+    document.querySelector('.submit').addEventListener("click", displaySubmitMessage);
+
+    function displaySubmitMessage() {
+    document.querySelector(".notification").style.visibility = "visible"
+    }
+</script>
+</body>
+</html>
